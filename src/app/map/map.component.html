@@ -1,0 +1,156 @@
+<div id="map"></div>
+<div id="info" style="position: fixed; bottom: 20px; left: 100px"></div>
+<div id="menu" style="position: fixed; top: 20px; left: 100px">
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'visible');
+      map.setLayoutProperty('floors.2', 'visibility', 'none');
+      map.setLayoutProperty('floors.3', 'visibility', 'none');
+      map.setLayoutProperty('floors.4', 'visibility', 'none');
+      map.setLayoutProperty('floors.5', 'visibility', 'none');
+      map.setLayoutProperty('floors.6', 'visibility', 'none');
+      map.setLayoutProperty('floors.7', 'visibility', 'none');
+      map.setLayoutProperty('floors.parking', 'visibility', 'none');
+      map.setFilter('spaces', null);
+      map.setFilter('beacons', ['in', 'floor_id', ''])
+    "
+  >
+    Disco
+  </button>
+  &nbsp;
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'visible');
+      map.setLayoutProperty('floors.2', 'visibility', 'none');
+      map.setLayoutProperty('floors.3', 'visibility', 'none');
+      map.setLayoutProperty('floors.4', 'visibility', 'none');
+      map.setLayoutProperty('floors.5', 'visibility', 'none');
+      map.setLayoutProperty('floors.6', 'visibility', 'none');
+      map.setLayoutProperty('floors.7', 'visibility', 'none');
+      map.setLayoutProperty('floors.parking', 'visibility', 'none');
+      map.setFilter('spaces', ['in', 'floor_id', 4]);
+      map.setFilter('beacons', ['in', 'floor_id', 4])
+    "
+  >
+    1
+  </button>
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'none');
+      map.setLayoutProperty('floors.2', 'visibility', 'visible');
+      map.setLayoutProperty('floors.3', 'visibility', 'none');
+      map.setLayoutProperty('floors.4', 'visibility', 'none');
+      map.setLayoutProperty('floors.5', 'visibility', 'none');
+      map.setLayoutProperty('floors.6', 'visibility', 'none');
+      map.setLayoutProperty('floors.7', 'visibility', 'none');
+      map.setLayoutProperty('floors.parking', 'visibility', 'none');
+      map.setFilter('spaces', ['in', 'floor_id', 6]);
+      map.setFilter('beacons', ['in', 'floor_id', 6])
+    "
+  >
+    2
+  </button>
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'none');
+      map.setLayoutProperty('floors.2', 'visibility', 'none');
+      map.setLayoutProperty('floors.3', 'visibility', 'visible');
+      map.setLayoutProperty('floors.4', 'visibility', 'none');
+      map.setLayoutProperty('floors.5', 'visibility', 'none');
+      map.setLayoutProperty('floors.6', 'visibility', 'none');
+      map.setLayoutProperty('floors.7', 'visibility', 'none');
+      map.setLayoutProperty('floors.parking', 'visibility', 'none');
+      map.setFilter('spaces', ['in', 'floor_id', 7]);
+      map.setFilter('beacons', ['in', 'floor_id', 7])
+    "
+  >
+    3
+  </button>
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'none');
+      map.setLayoutProperty('floors.2', 'visibility', 'none');
+      map.setLayoutProperty('floors.3', 'visibility', 'none');
+      map.setLayoutProperty('floors.4', 'visibility', 'visible');
+      map.setLayoutProperty('floors.5', 'visibility', 'none');
+      map.setLayoutProperty('floors.6', 'visibility', 'none');
+      map.setLayoutProperty('floors.7', 'visibility', 'none');
+      map.setLayoutProperty('floors.parking', 'visibility', 'none');
+      map.setFilter('spaces', ['in', 'floor_id', 8]);
+      map.setFilter('beacons', ['in', 'floor_id', 8])
+    "
+  >
+    4
+  </button>
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'none');
+      map.setLayoutProperty('floors.2', 'visibility', 'none');
+      map.setLayoutProperty('floors.3', 'visibility', 'none');
+      map.setLayoutProperty('floors.4', 'visibility', 'none');
+      map.setLayoutProperty('floors.5', 'visibility', 'visible');
+      map.setLayoutProperty('floors.6', 'visibility', 'none');
+      map.setLayoutProperty('floors.7', 'visibility', 'none');
+      map.setLayoutProperty('floors.parking', 'visibility', 'none');
+      map.setFilter('spaces', ['in', 'floor_id', 9]);
+      map.setFilter('beacons', ['in', 'floor_id', 9])
+    "
+  >
+    5
+  </button>
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'none');
+      map.setLayoutProperty('floors.2', 'visibility', 'none');
+      map.setLayoutProperty('floors.3', 'visibility', 'none');
+      map.setLayoutProperty('floors.4', 'visibility', 'none');
+      map.setLayoutProperty('floors.5', 'visibility', 'none');
+      map.setLayoutProperty('floors.6', 'visibility', 'visible');
+      map.setLayoutProperty('floors.7', 'visibility', 'none');
+      map.setLayoutProperty('floors.parking', 'visibility', 'none');
+      map.setFilter('spaces', ['in', 'floor_id', 10]);
+      map.setFilter('beacons', ['in', 'floor_id', 10])
+    "
+  >
+    6
+  </button>
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'none');
+      map.setLayoutProperty('floors.2', 'visibility', 'none');
+      map.setLayoutProperty('floors.3', 'visibility', 'none');
+      map.setLayoutProperty('floors.4', 'visibility', 'none');
+      map.setLayoutProperty('floors.5', 'visibility', 'none');
+      map.setLayoutProperty('floors.6', 'visibility', 'none');
+      map.setLayoutProperty('floors.7', 'visibility', 'visible');
+      map.setLayoutProperty('floors.parking', 'visibility', 'none');
+      map.setFilter('spaces', ['in', 'floor_id', 11]);
+      map.setFilter('beacons', ['in', 'floor_id', 11])
+    "
+  >
+    7
+  </button>
+  <button
+    (click)="
+      map.setLayoutProperty('floors.1', 'visibility', 'none');
+      map.setLayoutProperty('floors.2', 'visibility', 'none');
+      map.setLayoutProperty('floors.3', 'visibility', 'none');
+      map.setLayoutProperty('floors.4', 'visibility', 'none');
+      map.setLayoutProperty('floors.5', 'visibility', 'none');
+      map.setLayoutProperty('floors.6', 'visibility', 'none');
+      map.setLayoutProperty('floors.7', 'visibility', 'none');
+      map.setLayoutProperty('floors.parking', 'visibility', 'visible');
+      map.setFilter('spaces', ['in', 'floor_id', 5]);
+      map.setFilter('beacons', ['in', 'floor_id', 5])
+    "
+  >
+    –2
+  </button>
+  &nbsp;
+  <button (click)="map.setLayoutProperty('beacons', 'visibility', 'visible')">
+    Show beacons
+  </button>
+  <button (click)="map.setLayoutProperty('beacons', 'visibility', 'none')">
+    Hide beacons
+  </button>
+</div>
